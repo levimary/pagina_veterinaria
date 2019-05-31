@@ -8,7 +8,9 @@
       <link rel="stylesheet" type="text/css" href="css/index.css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <meta charset="utf-8">
+      <meta charset="utf-8"
+
+      <
     </head>
 
     <body>
@@ -16,7 +18,7 @@
        <nav>
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo left"><img src="assets/images/veterinaria.png"></a>
-          <ul class="right">
+          <ul class="right ">
             <li><a href="index.html">inicio</a></li>
             <li><a href="contactanos.html">Contactanos</a></li>
             <li><a href="promociones.html">Promociones</a></li>
@@ -29,57 +31,40 @@
 
 
       <!--Seccion 1-->
-      <section id="registro">
-        <div class="container">
-          <div class="row">
-            <div class="col s12">
-              <h2>Contactanos</h2>
+      <div id = "index-banner" class="parallax-container">
+        <div class="">
+          <div class="container">
+            <br><br>
+            <h1 class="header center">Administrador</h1>
+            <div class="row center">
+              <form class="col s12 l12">
+                <div class="row">
+                  <div class="col l3"></div>
+                  <div class="input-field col l6">
+                    <input type="text" id="first_name" class="validate black-text" >
+                    <label for="first_name" class="black-text " >Nombre</label>
+                  </div>
+                  <div class="col l3"></div>
+                </div>
+                <div class="row">
+                  <div class="col l3"></div>
+                  <div class="input-field col l6">
+                    <input id="password" name="password" class="validate" data-error=".errorTxt6"type="password" class="validate black-text" >
+                    <label for="password" class="black-text " >Contraseña</label>
+                  </div>
+                  <div class="col l3"></div>
+                </div>
+              </form>
+              <div class="row">
+                <a  class=" btn" href="administrador.html"type="action" name="action">Iniciar</a>
+              </div>
+              
             </div>
+            <br><br>
           </div>
-          <form class="col s12 formValidate" id="formValidate" method="get" action="#">
-            <div class="row">
-            <div class="input-field col s6">
-              <input type="text" id="first_name" name="first_name" data-error=".errorTxt1">
-              <label for="first_name">Nombre</label>
-               <div class="errorTxt1"></div>
-            </div>
-            <div class="input-field col s6">
-              <input type="text" id="last_name" name="last_name" class="validate" data-error=".errorTxt3">
-              <label for="last_name">Apellidos</label>
-              <div class="errorTxt2"></div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="input-field col s12 m6">
-              <input type="tel" id="telefono" name="telefono" class="validate" data-error=".errorTxt4">
-              <label for="telefono">Telefono</label>
-              <div class="errorTxt4"></div>
-            </div>
-            <div class="input-field col s12 m6">
-              <input type="email" id="email" name="email" class="validate" data-error=".errorTxt2">
-              <label for="email">Email</label>
-              <div class="errorTxt3"></div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix">mode_edit</i>
-              <textarea id="icon_prefix2" name="icon_prefix2" class="materialize-textarea" data-error=".errorTxt5"></textarea>
-              <label for="icon_prefix2">Dudas o comentarios</label>
-              <div class="errorTxt5"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col l4"></div>
-            <button class="btn waves-effect waves-light col l4 light-blue darken-4" type="action" name="action">Enviar
-            </button>
-            <div class="col l4"></div>
-          </div>
-          </form>
         </div>
-      </section>
+        <div class="parallax"><img src="assets/images/fondo.jpeg" alt="Unsplashed background img 1"></div>
+      </div>
       <!--/Seccion 1-->
       <!--/Registro-->
       <!--footer-->
@@ -93,7 +78,7 @@
             </div>
 
             <div class="col s12 l3">
-              <a href="#">Contactanos en Nochistla Zacatecas</a>
+              <a href="#">Contactanos en Nochistlan Zacatecas</a>
             </div>
 
             <div class="col s12 l3">
@@ -118,7 +103,6 @@
       <!--JavaScript at end of body for optimized loading-->
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script src="js/jquery.validate.js"></script>
       <script src="js/init.js"></script>
       <script src="js/materialize.js"></script>
 
