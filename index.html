@@ -20,6 +20,7 @@
           <ul class="right">
             <li><a href="contactanos.html">Contactanos</a></li>
             <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="quienes.html">Quienes somos?</a></li>
             <li><a href="login.html">Administrador</a></li> 
               
           </ul>
@@ -32,7 +33,7 @@
         <div class="section no-pad-bot">
           <div class="container">
             <br><br>
-            <h1 class="header center"><b>Veterinaria la region</b></h1>
+            <h1 class="header center"><b>Veterinaria la región</b></h1>
             <div class="row center">
               <h4 class="header col s12 light"><b>La mejor atencion para tu mascota</b> </h4>
             </div>
@@ -87,6 +88,23 @@
         </div>
       </div>
       <!--Seccion 2-->
+
+      <button onclick="ajax()"><H6>Clic conoce mas...<H6></button>
+        <div id="info"></div>
+
+       <script>
+         function ajax(){
+           var ajaxRes = new XMLHttpRequest()
+           ajaxRes.onreadystatechange = function(){
+              if (ajaxRes.readyState == 4 && ajaxRes.status == 200) {
+                 document.getElementById("info").innerHTML=ajaxRes.responseText
+              }
+            }
+            ajaxRes.open("GET","lugar.html",true)
+              //ajaxRes.open("GET","texto.txt",true)
+           ajaxRes.send()
+          }
+        </script>
         
       <!--Seccion3-->
 
@@ -103,22 +121,7 @@
       <!--/Seccion3-->
 
       <!--Seccion4-->
-        <button onclick="ajax()"><H3>Quienes somos?<H3></button>
-        <div id="info"></div>
-
-       <script>
-         function ajax(){
-           var ajaxRes = new XMLHttpRequest()
-           ajaxRes.onreadystatechange = function(){
-              if (ajaxRes.readyState == 4 && ajaxRes.status == 200) {
-                 document.getElementById("info").innerHTML=ajaxRes.responseText
-              }
-            }
-            ajaxRes.open("GET","quienes.html",true)
-              //ajaxRes.open("GET","texto.txt",true)
-           ajaxRes.send()
-          }
-        </script>
+        
       <!--/Seccion4-->
       
       <!--/Registro-->
