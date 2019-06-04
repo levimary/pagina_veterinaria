@@ -39,10 +39,6 @@
             icon_prefix2: {
 				required: true,
 				minlength: 20
-            },
-            password: {
-                required: true,
-                minlength: 8
             }
 
         },
@@ -68,12 +64,7 @@
             icon_prefix2:{
                 required: "Ingresa un comentario",
                 minlength: "Ingresa al menos 20 caracteres"
-            },
-            password:{
-                required: "Ingresa tu contrase;a",
-                minlength: "Ingresa al menos 8 caracteres"
             }
-            
         },
         errorElement : 'div',
         errorPlacement: function(error, element) {
